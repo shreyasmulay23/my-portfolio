@@ -17,8 +17,44 @@
   }
 }
 
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom Background Gradient */
+.bg-custom {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+.animated-bg {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.animated-bg::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
+  animation: wave 10s infinite linear;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(-10%) translateY(-5%); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
