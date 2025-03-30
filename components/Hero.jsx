@@ -49,28 +49,28 @@ const Hero = () => {
             >
                 <div className="space-y-8">
                     <motion.h1
-                        className="text-5xl md:text-7xl font-bold"
+                        className="text-5xl md:text-7xl font-bold flex items-center justify-center flex-wrap"
                         variants={fadeInUp}
                     >
                         <motion.span
-                            className="block text-white opacity-90"
+                            className="flex block text-white opacity-90 items-center"
                             variants={fadeInUp}
                         >
-                           Hi, I am
+                            Hi, I am<span className={'hidden sm:flex leading-1'}><br/>&nbsp;</span>
                         </motion.span>
                         <motion.span
-                            className={`block ${gradientText}`}
+                            className={`block bg-clip-text text-transparent animate-gradient leading-normal`}
                             variants={fadeInUp}
                         >
-                            Shreyas
+                            Shreyas Mulay
                         </motion.span>
                     </motion.h1>
 
                     <motion.p
-                        className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto"
+                        className="max-w-7xl text-xl md:text-2xl text-gray-300 mx-auto"
                         variants={fadeInUp}
                     >
-                        Full Stack Developer | UI/UX Enthusiast | Problem Solver
+                        Full-Stack JavaScript Developer | AI-Powered 3D Experiences | Future-Ready Tech
                     </motion.p>
 
                     <motion.div

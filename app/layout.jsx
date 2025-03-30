@@ -1,7 +1,12 @@
-import { Inter } from 'next/font/google';
+import { Roboto_Mono } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Roboto_Mono({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-roboto-mono',
+    weight: ['100', '200', '300', '400', '500', '600', '700']
+});
 
 export const metadata = {
     title: 'Shreyas Mulay | Portfolio',
@@ -12,7 +17,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
         <body
-            className={`${inter.className}`}
+            className={`${poppins.className}`}
         >
         {children}
         </body>
