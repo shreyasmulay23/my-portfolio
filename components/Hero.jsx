@@ -1,16 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-import FloatingShapes from './FloatingShapes';
 
 const Hero = () => {
     return (
         <section className="relative h-screen flex flex-col items-center justify-center text-white bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
             {/* 3D Wavy Background Effect */}
             <div className="animated-bg"></div>
-
-            {/* Floating 3D Shapes in Background */}
-            <FloatingShapes />
-
 
             {/* Name with Smooth Fade-in Animation */}
             <motion.h1
