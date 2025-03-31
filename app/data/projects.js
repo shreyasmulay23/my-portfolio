@@ -1,33 +1,10 @@
 export const projectsData = [
     {
-        title: 'Hirrd',
-        description:
-            'A modern job portal application connecting talent with opportunities',
-        image: 'hirrd.png',
-        tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-        github: 'https://youtu.be/2XF-HgauItk?si=xnuz7_gpUVBBgdW6',
-        live: 'https://youtu.be/2XF-HgauItk?si=xnuz7_gpUVBBgdW6',
-        details: {
-            problem:
-                'Traditional job boards lack modern features and user experience',
-            solution:
-                'Built a streamlined job portal with real-time updates and intelligent matching',
-            features: [
-                'Real-time job notifications',
-                'AI-powered job matching',
-                'Advanced search filters',
-                'Application tracking system'
-            ],
-            impact: 'Helping thousands of job seekers find their dream positions'
-        }
-    },
-    {
-        title: 'Schedulrr',
+        title: 'Animate Anything',
         description: 'A Calendly clone for seamless meeting scheduling',
-        image: 'schedulrr.png',
-        tech: ['Next.js', 'TypeScript', 'Prisma', 'tRPC'],
-        github: 'https://youtu.be/glAC7d-TYSM?si=KW5Wrdeh5uVPpu7c',
-        live: 'https://youtu.be/glAC7d-TYSM?si=KW5Wrdeh5uVPpu7c',
+        image: 'projects/animate_anything.jpg',
+        tech: ['ReactJs', 'Node.js', 'MongoDB'],
+        live: 'https://app.anything.world/animation-rigging',
         details: {
             problem: 'Complex meeting scheduling across time zones',
             solution:
@@ -42,12 +19,11 @@ export const projectsData = [
         }
     },
     {
-        title: 'Zcrum',
+        title: 'Generate Anything',
         description: 'A Jira-inspired project management solution',
-        image: 'zcrum.png',
-        tech: ['React', 'Redux', 'Node.js', 'PostgreSQL'],
-        github: 'https://youtu.be/R5dBYINNouY?si=9x7lSDuqwJ0ojtIg',
-        live: 'https://youtu.be/R5dBYINNouY?si=9x7lSDuqwJ0ojtIg',
+        image: 'projects/generate_anything.jpg',
+        tech: ['React', 'Node.js', 'MongoDB', 'Tripo APIs'],
+        live: 'https://app.anything.world/mesh-generation',
         details: {
             problem: 'Need for a simplified project management tool for small teams',
             solution:
@@ -62,23 +38,44 @@ export const projectsData = [
         }
     },
     {
-        title: 'Reflct',
-        description: 'A minimalist journaling application',
-        image: 'reflct.png',
-        tech: ['Next.js', 'Tailwind CSS', 'Supabase'],
-        github: 'https://youtu.be/R5dBYINNouY?si=9x7lSDuqwJ0ojtIg',
-        live: 'https://youtu.be/R5dBYINNouY?si=9x7lSDuqwJ0ojtIg',
+        title: 'CAP CLS UI',
+        description: 'A Jira-inspired project management solution',
+        image: 'projects/dbs.jpg',
+        tech: ['React', 'Node.js', 'MongoDB', 'Tripo APIs'],
+        live: 'https://app.anything.world/mesh-generation',
         details: {
-            problem: 'Digital journaling apps are often cluttered and complex',
+            problem: 'Need for a simplified project management tool for small teams',
             solution:
-                'Created a clean, focused writing experience with powerful features',
+                'Developed a streamlined alternative to complex enterprise tools',
             features: [
-                'Markdown support',
-                'Daily prompts',
-                'Mood tracking',
-                'Privacy-focused design'
+                'Kanban and Scrum boards',
+                'Sprint planning',
+                'Time tracking',
+                'Performance analytics'
             ],
-            impact: 'Helping users maintain consistent journaling habits'
+            impact: 'Helping teams increase productivity by 40%'
+        }
+    },
+    {
+        title: 'Crypto Hunter',
+        description:
+            'Interactive dashboard for data visualization and analysis of crypto currencies',
+        image: 'projects/crypto_hunter.jpg',
+        tech: ['ReactJS', 'chart.js', 'Firebase', 'Material UI'],
+        github: 'https://github.com/shreyasmulay23/crypto-hunter',
+        live: 'https://shr-crypto-hunter.netlify.app/',
+        details: {
+            problem:
+                'Traditional job boards lack modern features and user experience',
+            solution:
+                'Built a streamlined job portal with real-time updates and intelligent matching',
+            features: [
+                'Real-time job notifications',
+                'AI-powered job matching',
+                'Advanced search filters',
+                'Application tracking system'
+            ],
+            impact: 'Helping thousands of job seekers find their dream positions'
         }
     }
 ];

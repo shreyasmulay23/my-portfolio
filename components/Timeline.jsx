@@ -34,6 +34,7 @@ export default function Timeline() {
                     </VerticalTimeline>
                 </div>
             </div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50"></div>
         </section>
     );
 }

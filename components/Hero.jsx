@@ -78,7 +78,7 @@ const Hero = () => {
                         variants={fadeInUp}
                     >
                         <motion.a
-                            href="#projects"
+                            href="#projects_1"
                             className={`px-8 py-3 rounded-full text-white ${gradientBg} ${gradientHover} transition-all duration-300 shadow-lg shadow-purple-500/25`}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

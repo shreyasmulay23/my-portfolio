@@ -23,7 +23,7 @@ export default function Navbar() {
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
                         <a href="#about" className="text-white hover:text-gray-300 transition-colors">About</a>
-                        <a href="#projects" className="text-white hover:text-gray-300 transition-colors">Projects</a>
+                        <a href="#projects_1" className="text-white hover:text-gray-300 transition-colors">Projects</a>
                         <a href="#contact" className="text-white hover:text-gray-300 transition-colors">Contact</a>
                         <div className="flex items-center space-x-4">
                             <a href="https://github.com/shreyasmulay23" target="_blank" rel="noopener noreferrer"
@@ -56,7 +56,7 @@ export default function Navbar() {
                                onClick={() => setIsOpen(false)}>About</a>
                             <a href="#skills" className="text-white hover:text-gray-300"
                                onClick={() => setIsOpen(false)}>Skills</a>
-                            <a href="#projects" className="text-white hover:text-gray-300"
+                            <a href="#projects_1" className="text-white hover:text-gray-300"
                                onClick={() => setIsOpen(false)}>Projects</a>
                             <a href="#contact" className="text-white hover:text-gray-300"
                                onClick={() => setIsOpen(false)}>Contact</a>
