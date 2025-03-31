@@ -28,6 +28,7 @@ export default function Timeline() {
                             <ExperienceCard
                                 key={`experience-${index}`}
                                 experience={experience}
+                                index={index}
                             />
                         ))}
                     </VerticalTimeline>

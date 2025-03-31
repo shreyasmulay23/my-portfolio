@@ -17,7 +17,7 @@ export default function Navbar() {
                         href="#hero"
                         className={`text-2xl font-bold  ${gradientText}`}
                     >
-
+                        Shreyas Mulay
                     </a>
 
                     {/* Desktop Navigation */}
@@ -26,15 +26,15 @@ export default function Navbar() {
                         <a href="#projects" className="text-white hover:text-gray-300 transition-colors">Projects</a>
                         <a href="#contact" className="text-white hover:text-gray-300 transition-colors">Contact</a>
                         <div className="flex items-center space-x-4">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                            <a href="https://github.com/shreyasmulay23" target="_blank" rel="noopener noreferrer"
                                className="text-white hover:text-gray-300">
                                 <AiOutlineGithub className="w-5 h-5"/>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                            <a href="https://www.linkedin.com/in/shreyasmulay23/" target="_blank" rel="noopener noreferrer"
                                className="text-white hover:text-gray-300">
                                 <ImLinkedin className="w-5 h-5"/>
                             </a>
-                            <a href="mailto:your.email@example.com" className="text-white hover:text-gray-300">
+                            <a href="mailto:shreyasmulay23@gmail.com" className="text-white hover:text-gray-300">
                                 <LuMail className="w-5 h-5"/>
                             </a>
                         </div>

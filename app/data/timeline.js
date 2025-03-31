@@ -36,7 +36,7 @@ export const timelineData = [
     },
     {
         year: '2007 - 2011',
-        title: 'Bachelor of Engineering (Computer Science & Engineering) –',
+        title: 'Bachelor of Engineering (Computer Science & Engineering)',
         company: 'Rajiv Gandhi Technical University, Bhopal',
         description: '73.47%',
         icon: 'education'

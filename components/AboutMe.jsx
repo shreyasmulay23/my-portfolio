@@ -7,7 +7,7 @@ import { skills } from '../app/data/skills';
 
 export default function AboutMe() {
     return (
-        <section className="py-20 bg-primary">
+        <section className="py-20 bg-primary" id={'about'}>
             <div className="container mx-auto px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

@@ -6,7 +6,7 @@ import { LuMail, LuMapPin } from "react-icons/lu";
 
 export default function Contact() {
     return (
-        <section className="py-20 bg-gray-900">
+        <section className="py-20 bg-gray-900" id={'contact'}>
             <div className="container mx-auto px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

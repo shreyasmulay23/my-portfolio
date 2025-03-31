@@ -6,13 +6,13 @@ import 'react-vertical-timeline-component/style.min.css';
 import { LuBriefcase, LuGraduationCap } from 'react-icons/lu';
 import { motion } from 'framer-motion';
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience, index }) => {
     return (
         <VerticalTimelineElement
             contentStyle={{
                 background: '#1d1836',
                 color: '#fff',
-                boxShadow: '8px 8px #A5158C',
+                boxShadow: `${index % 2 === 0 ? '-8px -8px #A5158C' : '8px 8px #A5158C'}`,
                 borderRadius: '1rem',
             }}
             contentArrowStyle={{ borderRight: '7px solid  #1d1836' }}
