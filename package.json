@@ -1,30 +1,32 @@
 {
-  "name" : "shreyas_portfolio",
-  "version" : "0.1.0",
-  "private" : true,
-  "scripts" : {
-    "dev" : "next dev --turbopack",
-    "build" : "next build",
-    "start" : "next start",
-    "lint" : "next lint"
+  "name": "shreyas_portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "dependencies" : {
-    "framer-motion" : "^12.6.0",
-    "gsap" : "^3.12.7",
-    "next" : "15.2.0",
-    "react-icons" : "^5.5.0",
-    "@emailjs/browser" : "^4.1.0",
-    "react" : "^18.3.1",
-    "react-dom" : "^18.3.1",
-    "react-hot-toast" : "^2.4.1"
+  "dependencies": {
+    "@emailjs/browser": "^4.1.0",
+    "framer-motion": "^12.6.0",
+    "gsap": "^3.12.7",
+    "next": "15.2.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.5.0",
+    "react-vertical-timeline-component": "^3.5.3"
   },
-  "devDependencies" : {
-    "@tailwindcss/postcss" : "^4",
-    "@types/node" : "^20",
-    "tailwindcss" : "^4",
-    "typescript" : "^5",
-    "@eslint/js" : "^9.9.1",
-    "@types/react" : "^18.3.5",
-    "@types/react-dom" : "^18.3.0"
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

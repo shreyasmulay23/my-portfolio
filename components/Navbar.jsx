@@ -3,6 +3,8 @@
 import { LuGithub, LuLinkedin, LuMail, LuMenu, LuX } from 'react-icons/lu';
 import { useState } from 'react';
 import { gradientText } from '../app/utils/gradients';
+import { AiOutlineGithub } from 'react-icons/ai';
+import { ImLinkedin } from 'react-icons/im';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,30 +13,26 @@ export default function Navbar() {
         <nav className="fixed w-full bg-transparent backdrop-blur-lg z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    {/*<a href="#hero" className="text-2xl font-bold text-white">
-                        Portfolio
-                    </a>*/}
                     <a
                         href="#hero"
                         className={`text-2xl font-bold  ${gradientText}`}
                     >
-                        Portfolio
+
                     </a>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
                         <a href="#about" className="text-white hover:text-gray-300 transition-colors">About</a>
-                        <a href="#skills" className="text-white hover:text-gray-300 transition-colors">Skills</a>
                         <a href="#projects" className="text-white hover:text-gray-300 transition-colors">Projects</a>
                         <a href="#contact" className="text-white hover:text-gray-300 transition-colors">Contact</a>
                         <div className="flex items-center space-x-4">
                             <a href="https://github.com" target="_blank" rel="noopener noreferrer"
                                className="text-white hover:text-gray-300">
-                                <LuGithub className="w-5 h-5"/>
+                                <AiOutlineGithub className="w-5 h-5"/>
                             </a>
                             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
                                className="text-white hover:text-gray-300">
-                                <LuLinkedin className="w-5 h-5"/>
+                                <ImLinkedin className="w-5 h-5"/>
                             </a>
                             <a href="mailto:your.email@example.com" className="text-white hover:text-gray-300">
                                 <LuMail className="w-5 h-5"/>

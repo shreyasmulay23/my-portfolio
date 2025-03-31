@@ -1,12 +1,12 @@
 'use client';
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from '../app/utils/animations';
-import { gradientBg, gradientHover, gradientText } from '../app/utils/gradients';
-import {LuArrowDown} from 'react-icons/lu';
+import { gradientBg, gradientHover } from '../app/utils/gradients';
+import { LuArrowDown } from 'react-icons/lu';
 
 const Hero = () => {
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center relative bg-gray-900">
+        <section id="hero" className="min-h-screen flex items-center justify-center relative bg-primary">
             {/* Gradient Orbs */}
             <motion.div
                 className="absolute inset-0 overflow-hidden"
