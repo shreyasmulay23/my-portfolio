@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const HeroSection = () => {
     return (
-        <div className="bg-primary text-white py-20 relative w-full min-h-screen flex items-center">
+        <div  id="hero" className="bg-primary text-white py-20 relative w-full min-h-screen flex items-center">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
