@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://shreyas-mulay.vercel.app
+
+# Sitemaps
+Sitemap: https://shreyas-mulay.vercel.app/sitemap.xml

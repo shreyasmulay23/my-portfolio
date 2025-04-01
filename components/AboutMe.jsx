@@ -4,6 +4,11 @@ import { motion } from 'framer-motion';
 import { gradientText } from '../app/utils/gradients';
 import { skills } from '../app/data/skills';
 
+export const metadata = {
+    title: 'About | Shreyas Mulay',
+    description: 'Know more about Shreyas Mulay, an experienced frontend engineer specializing in React, Web Components, and 3D web.',
+};
+
 
 export default function AboutMe() {
     return (
