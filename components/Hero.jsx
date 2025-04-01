@@ -78,7 +78,7 @@ const Hero = () => {
                         variants={fadeInUp}
                     >
                         <motion.a
-                            href="#projects_1"
+                            href="#projects"
                             className={`px-8 py-3 rounded-full text-white ${gradientBg} ${gradientHover} transition-all duration-300 shadow-lg shadow-purple-500/25`}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -118,7 +118,7 @@ const Hero = () => {
             </motion.div>
 
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50"/>
+            {/*<div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50"/>*/}
         </section>
     );
 };

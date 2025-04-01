@@ -1,82 +1,151 @@
 'use client';
 
+import { LuMail, LuMapPin, LuSend } from 'react-icons/lu';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
-import { LuMail, LuMapPin } from "react-icons/lu";
-
+import toast, { Toaster } from 'react-hot-toast';
+import { fadeInUp, staggerContainer } from '../app/utils/animations';
 
 export default function Contact() {
-    return (
-        <section className="py-20 bg-gray-900" id={'contact'}>
-            <div className="container mx-auto px-4">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    className="max-w-4xl mx-auto"
-                >
-                    <h2 className="text-4xl font-bold text-white mb-12 text-center">
-                        Get in Touch
-                    </h2>
+    const formRef = useRef(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        <div>
-                            <h3 className="text-2xl font-semibold text-white mb-6">
-                                Contact Information
-                            </h3>
-                            <div className="space-y-6">
-                                <div className="flex items-center gap-4">
-                                    <LuMail className="w-6 h-6 text-blue-400"/>
-                                    <div>
-                                        <p className="text-gray-400">Email</p>
-                                        <a href="mailto:shreyasmulay23@gmail.com"
-                                           className="text-white hover:text-blue-400">
-                                            shreyasmulay23@gmail.com
-                                        </a>
-                                    </div>
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (!formRef.current) return;
+
+        try {
+            setIsSubmitting(true);
+            await emailjs.sendForm(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+                formRef.current,
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            );
+            toast.success('Message sent successfully!');
+            formRef.current.reset();
+        } catch (error) {
+            toast.error('Failed to send message. Please try again.');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+    return (
+        <section id="contact" className="py-20 bg-primary">
+            <Toaster position="top-right"/>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <motion.h2
+                    className="text-3xl md:text-4xl font-bold text-center mb-16"
+                    variants={fadeInUp}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                >
+                    Get In Touch
+                </motion.h2>
+
+                <motion.div
+                    className="grid grid-cols-1 md:grid-cols-2 gap-12"
+                    variants={staggerContainer}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                >
+                    {/* Contact Information */}
+                    <motion.div
+                        className="space-y-8"
+                        variants={fadeInUp}
+                    >
+                        <h3 className="text-2xl font-bold text-white">Let's talk about everything!</h3>
+                        <p className="text-white">
+                            Feel free to reach out for collaborations, opportunities, or just a friendly chat.
+                        </p>
+                        <div className="space-y-6">
+                            <div className="flex items-center gap-4">
+                                <LuMail className="w-6 h-6 text-blue-400"/>
+                                <div>
+                                    <p className="text-gray-400">Email</p>
+                                    <a href="mailto:shreyasmulay23@gmail.com"
+                                       className="text-white hover:text-blue-400">
+                                        shreyasmulay23@gmail.com
+                                    </a>
                                 </div>
-                                <div className="flex items-center gap-4">
-                                    <LuMapPin className="w-6 h-6 text-blue-400"/>
-                                    <div>
-                                        <p className="text-gray-400">Location</p>
-                                        <p className="text-white">Pune, India</p>
-                                    </div>
+                            </div>
+                            <div className="flex items-center gap-4">
+                                <LuMapPin className="w-6 h-6 text-blue-400"/>
+                                <div>
+                                    <p className="text-gray-400">Location</p>
+                                    <p className="text-white">Pune, India</p>
                                 </div>
                             </div>
                         </div>
+                    </motion.div>
 
-                        <form className="space-y-6">
-                            <div>
-                                <label htmlFor="name" className="block text-white mb-2">Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-white"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="email" className="block text-white mb-2">Email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-white"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="message" className="block text-white mb-2">Message</label>
-                                <textarea
-                                    id="message"
-                                    rows={4}
-                                    className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-white"
-                                ></textarea>
-                            </div>
-                            <button
-                                type="submit"
-                                className="w-full bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition-colors"
-                            >
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
+                    {/* Contact Form */}
+                    <motion.form
+                        ref={formRef}
+                        onSubmit={handleSubmit}
+                        className="space-y-6"
+                        variants={fadeInUp}
+                    >
+                        <div>
+                            <label htmlFor="name" className="block text-white mb-2">
+                                Name
+                            </label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                required
+                                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-white"
+                            />
+                        </div>
+
+                        <div>
+                            <label htmlFor="email" className="block text-white mb-2">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                name="from_name"
+                                id="email"
+                                required
+                                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-white"
+                            />
+                        </div>
+
+                        <div>
+                            <label htmlFor="message" className="block text-white mb-2">
+                                Message
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows={4}
+                                required
+                                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-white"
+                            />
+                        </div>
+
+                        <motion.button
+                            type="submit"
+                            disabled={isSubmitting}
+                            className="w-full flex items-center justify-center gap-2 px-8 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors disabled:opacity-50"
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                        >
+                            {isSubmitting ? (
+                                'Sending...'
+                            ) : (
+                                <>
+                                    Send Message
+                                    <LuSend className="w-5 h-5"/>
+                                </>
+                            )}
+                        </motion.button>
+                    </motion.form>
                 </motion.div>
             </div>
         </section>

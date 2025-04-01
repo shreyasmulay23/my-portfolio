@@ -30,7 +30,7 @@ export default function Navbar() {
                                className="text-white hover:text-gray-300">
                                 <AiOutlineGithub className="w-5 h-5"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/shreyasmulay23/" target="_blank" rel="noopener noreferrer"
+                            <a href="https://www.linkedin.com/in/shreyasmulay23" target="_blank" rel="noopener noreferrer"
                                className="text-white hover:text-gray-300">
                                 <ImLinkedin className="w-5 h-5"/>
                             </a>
