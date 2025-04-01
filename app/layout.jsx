@@ -1,11 +1,11 @@
-import { Roboto_Mono } from 'next/font/google';
+import { Roboto_Mono, Spline_Sans_Mono } from 'next/font/google';
 import './globals.css';
 
-const poppins = Roboto_Mono({
+const splineSansMono = Spline_Sans_Mono({
     subsets: ['latin'],
     display: 'swap',
-    variable: '--font-roboto-mono',
-    weight: ['100', '200', '300', '400', '500', '600', '700']
+    variable: '--font-spline-sans-mono',
+    weight: ['300', '400', '500', '600', '700']
 });
 
 export const metadata = {
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
             <meta name="google-site-verification" content="9pSD15HXjK49OQCcFratZLYxdT_0K3ufHoBNxBWhETY" />
         </head>
         <body
-            className={`${poppins.className}`}
+            className={`${splineSansMono.className}`}
         >
         {children}
         </body>
