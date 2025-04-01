@@ -98,7 +98,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                                     View Code
                                 </a>)}
 
-                                <a
+                                {project.live && (<a
                                     href={project.live}
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -106,7 +106,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                                 >
                                     <LuExternalLink className="w-5 h-5"/>
                                     Live Demo
-                                </a>
+                                </a>)}
                             </div>
                         </div>
                     </motion.div>

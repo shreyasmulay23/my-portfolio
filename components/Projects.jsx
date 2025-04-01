@@ -80,8 +80,7 @@ export default function Projects() {
                                         <AiOutlineGithub className="w-5 h-5"/>
                                         Code
                                     </a>)}
-
-                                    <a
+                                    {project.live && (<a
                                         href={project.live}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -90,7 +89,7 @@ export default function Projects() {
                                     >
                                         <LuExternalLink className="w-5 h-5"/>
                                         Live Demo
-                                    </a>
+                                    </a>)}
                                 </div>
                             </div>
                         </motion.div>

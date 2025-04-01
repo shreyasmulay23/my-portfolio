@@ -42,7 +42,6 @@ export const projectsData = [
         description: 'The Central Limit System (CLS) at DBS Bank consolidates global limits, collateral, and covenant data, providing a real-time, single source of truth. It integrates various components for accurate limit management.',
         image: 'projects/dbs.jpg',
         tech: ['React', 'Node.js', 'Spring MVC', 'Finacle', 'JIRA'],
-        live: 'https://app.anything.world/mesh-generation',
         details: {
             problem: 'Prior to CLS, limits and collateral information were fragmented, making it difficult to get real-time updates or perform consolidated checks across regions. The system streamlined this process.',
             solution:
