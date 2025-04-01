@@ -13,12 +13,14 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="max-w-3xl mx-auto text-center mb-16"
+                    className="max-w-6xl mx-auto text-center mb-16"
                 >
                     <h2 className={`text-3xl md:text-4xl font-bold text-center mb-16 ${gradientText}`}>About Me</h2>
-                    <p className="text-gray-400 text-lg">
-                        Experienced Frontend Engineer specializing in React, Web Components, and 3D web applications.
-                        Passionate about building fast, scalable, and user-friendly digital experiences.
+                    <p className="text-white text-lg">
+                        Frontend Engineer with 11+ years of experience in React, Web Components, and 3D web development.
+                        Expert in building high-performance, scalable, and visually immersive user interfaces.
+                        Passionate about optimizing UX, accessibility, and web performance to create engaging digital
+                        experiences.
                     </p>
                 </motion.div>
 
