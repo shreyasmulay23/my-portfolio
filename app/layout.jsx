@@ -35,6 +35,7 @@ export const metadata = {
         description: 'React, Web Components & 3D Web Developer | 11+ years experience.',
         images: ['https://shreyas-mulay.vercel.app/og-image.jpg'],
     },
+    'google-site-verification': '9pSD15HXjK49OQCcFratZLYxdT_0K3ufHoBNxBWhETY'
 };
 
 export default function RootLayout({ children }) {
