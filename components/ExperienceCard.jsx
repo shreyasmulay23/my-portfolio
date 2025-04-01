@@ -39,14 +39,14 @@ const ExperienceCard = ({ experience, index }) => {
                 transition={{ duration: 0.6 }}
             >
                 <div className="flex flex-col gap-3">
-                    <h3 className="text-white text-[24px] font-bold">{experience.company}</h3>
+                    <h3 className="text-fuchsia-500 text-[24px] font-bold">{experience.company}</h3>
                     <p
                         className="text-secondary text-[16px] font-semibold"
                         style={{ margin: 0 }}
                     >
                         {experience.title}
                     </p>
-                    <span className="text-white-100 text-[14px]">{experience.description}</span>
+                    <span className="text-gray-400 text-[14px]">{experience.description}</span>
                 </div>
             </motion.div>
         </VerticalTimelineElement>

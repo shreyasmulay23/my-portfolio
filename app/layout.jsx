@@ -1,4 +1,4 @@
-import { Roboto_Mono, Spline_Sans_Mono } from 'next/font/google';
+import { Spline_Sans_Mono } from 'next/font/google';
 import './globals.css';
 
 const splineSansMono = Spline_Sans_Mono({
@@ -21,19 +21,19 @@ export const metadata = {
         siteName: 'Shreyas Mulay Portfolio',
         images: [
             {
-                url: 'https://shreyas-mulay.vercel.app/og-image.jpg',
+                url: 'https://shreyas-mulay.vercel.app/og-image.png',
                 width: 1200,
                 height: 630,
-                alt: 'Shreyas Mulay Portfolio',
-            },
+                alt: 'Shreyas Mulay Portfolio'
+            }
         ],
-        type: 'website',
+        type: 'website'
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Shreyas Mulay | Frontend Engineer',
         description: 'React, Web Components & 3D Web Developer | 11+ years experience.',
-        images: ['https://shreyas-mulay.vercel.app/og-image.jpg'],
+        images: ['https://shreyas-mulay.vercel.app/og-image.png']
     },
     verification: {
         google: '9pSD15HXjK49OQCcFratZLYxdT_0K3ufHoBNxBWhETY'
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
         <head>
-            <meta name="google-site-verification" content="9pSD15HXjK49OQCcFratZLYxdT_0K3ufHoBNxBWhETY" />
+            <meta name="google-site-verification" content="9pSD15HXjK49OQCcFratZLYxdT_0K3ufHoBNxBWhETY"/>
         </head>
         <body
             className={`${splineSansMono.className}`}

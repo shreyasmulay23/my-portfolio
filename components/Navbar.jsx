@@ -16,7 +16,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-16">
                     <a
                         href="#hero"
-                        className={`text-2xl font-bold ${gradientText}`}
+                        className={`block bg-clip-text text-transparent animate-gradient leading-normal text-2xl font-bold ${gradientText}`}
                     >
                         Shreyas Mulay
                     </a>

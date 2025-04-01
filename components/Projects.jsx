@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import ProjectModal from './ProjectModal';
 import { projectsData } from '../app/data/projects';
 import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai';
+import { gradientText } from '../app/utils/gradients';
 
 export default function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -14,7 +15,7 @@ export default function Projects() {
         <section id="projects" className="py-20 bg-primary">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.h2
-                    className="text-3xl md:text-4xl font-bold text-center mb-16"
+                    className={`text-3xl md:text-4xl font-bold text-center mb-16 block bg-clip-text text-transparent animate-gradient leading-normal ${gradientText}`}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -55,8 +56,8 @@ export default function Projects() {
                             </div>
 
                             <div className="p-6">
-                                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                                <p className="mb-4">{project.description}</p>
+                                <h3 className="text-xl font-bold mb-2 text-fuchsia-500">{project.title}</h3>
+                                <p className="mb-4 text-gray-400">{project.description}</p>
 
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tech.map((tech, techIndex) => (

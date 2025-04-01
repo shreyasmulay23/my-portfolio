@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import toast, { Toaster } from 'react-hot-toast';
 import { fadeInUp, staggerContainer } from '../app/utils/animations';
+import { gradientText } from '../app/utils/gradients';
 
 export default function Contact() {
     const formRef = useRef(null);
@@ -37,7 +38,7 @@ export default function Contact() {
             <Toaster position="top-right"/>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.h2
-                    className="text-3xl md:text-4xl font-bold text-center mb-16"
+                    className={`block bg-clip-text text-transparent animate-gradient leading-normal text-center mb-16 text-3xl md:text-4xl font-bold ${gradientText}`}
                     variants={fadeInUp}
                     initial="initial"
                     whileInView="animate"
@@ -58,7 +59,7 @@ export default function Contact() {
                         className="space-y-8"
                         variants={fadeInUp}
                     >
-                        <h3 className="text-2xl font-bold text-white">Let's talk about everything!</h3>
+                        <h3 className="text-2xl font-bold text-fuchsia-500">Let's talk about everything!</h3>
                         <p className="text-white">
                             Feel free to reach out for collaborations, opportunities, or just a friendly chat.
                         </p>

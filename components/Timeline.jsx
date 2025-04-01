@@ -15,7 +15,7 @@ export default function Timeline() {
         <section id="timeline" className="py-20 bg-primary">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.h2
-                    className={`text-3xl md:text-4xl font-bold text-center mb-16 ${gradientText}`}
+                    className={`text-3xl md:text-4xl font-bold text-center mb-16 block bg-clip-text text-transparent animate-gradient leading-normal ${gradientText}`}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -34,7 +34,6 @@ export default function Timeline() {
                     </VerticalTimeline>
                 </div>
             </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50"></div>
         </section>
     );
 }

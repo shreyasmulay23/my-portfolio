@@ -3,7 +3,7 @@ export const projectsData = [
         title: 'Animate Anything',
         description: 'Anything World provides AI-powered 3D animation and rigging, allowing users to automatically rig and animate static 3D models for games and interactive experiences. It simplifies character animation using machine learning, making it fast and accessible. 🚀',
         image: 'projects/animate_anything.jpg',
-        tech: ['ReactJs', 'Node.js', 'MongoDB', 'Gitbook', 'Shortcut', 'GCP', 'Social Signup'],
+        tech: ['ReactJs', 'Node.js', 'ThreeJs', 'MongoDB', 'Gitbook', 'Shortcut', 'GCP', 'Social Signup'],
         live: 'https://app.anything.world/animation-rigging',
         details: {
             problem: 'To automate and simplify 3D rigging and animation, reducing the time and effort needed for manual work.',
@@ -22,7 +22,7 @@ export const projectsData = [
         title: 'Generate Anything',
         description: 'The Mesh Generation feature from Anything World enables users to create 3D models using AI, based on images or text descriptions. This tool simplifies the 3D modeling process, making it accessible for developers and artists to generate custom 3D content quickly.​\n',
         image: 'projects/generate_anything.jpg',
-        tech: ['ReactJs', 'Node.js', 'MongoDB', 'Gitbook', 'Shortcut', 'GCP', 'Social Signup'],
+        tech: ['ReactJs', 'Node.js', 'ThreeJs', 'MongoDB',  'Gitbook', 'Shortcut', 'GCP', 'Social Signup'],
         live: 'https://app.anything.world/mesh-generation',
         details: {
             problem: 'Creating high-quality 3D models from scratch is time-consuming, complex, and requires expertise in modeling software.',
