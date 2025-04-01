@@ -1,6 +1,5 @@
 import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
-import Contact_1 from '../components/Contact_1';
 import Navbar from '../components/Navbar';
 import Timeline from '../components/Timeline';
 import Projects from '../components/Projects';
@@ -15,7 +14,6 @@ export default function Home() {
             <AboutMe/>
             <Timeline/>
             <Projects/>
-            {/*<Contact_1/>*/}
             <Contact/>
             <Footer/>
         </div>
