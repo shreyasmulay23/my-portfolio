@@ -55,6 +55,7 @@ const HeroSection = () => {
                             width={12}
                             height={12}
                             alt="React"
+                            title={'React'}
                             className="h-12 w-12 object-cover"
                         />
                         <Image
@@ -62,6 +63,7 @@ const HeroSection = () => {
                             width={12}
                             height={12}
                             alt="Next JS"
+                            title={'Next JS'}
                             className="h-12 w-12 object-cover filter invert"
                         />
                         <Image
@@ -69,14 +71,24 @@ const HeroSection = () => {
                             width={12}
                             height={12}
                             alt="Node JS"
+                            title={'Node JS'}
                             className="h-12 w-12 object-cover"
                         />
                         <Image
                             src="/threejs.svg"
                             width={12}
                             height={12}
-                            alt="Mongo DB"
+                            alt="Three JS"
+                            title={'Three JS'}
                             className="h-12 w-12 object-cover filter invert"
+                        />
+                        <Image
+                            src="/tailwindcss.svg"
+                            width={12}
+                            height={12}
+                            alt="Tailwind CSS"
+                            title={'Tailwind CSS'}
+                            className="h-12 w-12 object-cover"
                         />
                         <span className={'text-gray-400'}>...and more</span>
                     </div>
