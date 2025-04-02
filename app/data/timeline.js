@@ -1,14 +1,14 @@
 export const timelineData = [
     {
         year: 'Sept 2022 - Present',
-        title: 'Full Stack Javascript Engineer',
-        company: 'Anything World, London',
+        title: 'Senior Full Stack Engineer',
+        company: 'Anything World, London (Remote)',
         description: 'Developing AI-driven 3D web apps with React, Three.js & ML automation, optimizing performance & enhancing interactivity. Integrated secure auth, payments & backend services, improving user retention & API efficiency.',
         icon: 'work'
     },
     {
         year: 'Feb 2017 - Aug 2022',
-        title: 'Senior Associate | Frontend Developer',
+        title: 'Senior Associate | Full Stack Engineer',
         company: 'DBS Bank, Hyderabad',
         description: 'Optimized UI/UX for enterprise banking apps, enhancing interaction speeds by 30% & accessibility. Led TDD with 95%+ coverage, ensuring high-performance, scalable front-end architecture.',
         icon: 'work'

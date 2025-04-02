@@ -9,13 +9,13 @@ const splineSansMono = Spline_Sans_Mono({
 });
 
 export const metadata = {
-    title: 'Shreyas Mulay | Frontend Engineer & 3D Web Developer',
-    description: 'Experienced Frontend Engineer with 11+ years of experience in React, Web Components, and 3D Web Development. Passionate about fast, scalable, and interactive user experiences.',
-    keywords: 'Frontend Engineer, React Developer, Web Components, 3D Web, Next.js, Portfolio, UI Developer',
+    title: 'Shreyas Mulay | Full Stack Engineer & 3D Web Developer',
+    description: 'Experienced Full Stack Engineer with 11+ years of experience in React, Web Components, and 3D Web Development. Passionate about fast, scalable, and interactive user experiences.',
+    keywords: 'Full Stack Engineer, React Developer, Web Components, 3D Web, Next.js, Portfolio, UI Developer',
     authors: [{ name: 'Shreyas Mulay', url: 'https://shreyas-mulay.vercel.app' }],
     creator: 'Shreyas Mulay',
     openGraph: {
-        title: 'Shreyas Mulay | Frontend Engineer',
+        title: 'Shreyas Mulay | Full Stack Engineer',
         description: '11+ years of experience in React, Web Components, and 3D Web.',
         url: 'https://shreyas-mulay.vercel.app',
         siteName: 'Shreyas Mulay Portfolio',
@@ -31,7 +31,7 @@ export const metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Shreyas Mulay | Frontend Engineer',
+        title: 'Shreyas Mulay | Full Stack Engineer',
         description: 'React, Web Components & 3D Web Developer | 11+ years experience.',
         images: ['https://shreyas-mulay.vercel.app/og-image.png']
     },
@@ -45,7 +45,6 @@ export default function RootLayout({ children }) {
         <html lang="en">
         <head>
             <meta name="google-site-verification" content="9pSD15HXjK49OQCcFratZLYxdT_0K3ufHoBNxBWhETY"/>
-            {/* Google Analytics */}
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XZPLS88V3"></script>
             <script dangerouslySetInnerHTML={{
                 __html: `

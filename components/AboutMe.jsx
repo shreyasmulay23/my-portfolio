@@ -6,7 +6,7 @@ import { skills } from '../app/data/skills';
 
 export const metadata = {
     title: 'About | Shreyas Mulay',
-    description: 'Know more about Shreyas Mulay, an experienced frontend engineer specializing in React, Web Components, and 3D web.',
+    description: 'Know more about Shreyas Mulay, an experienced frontend engineer specializing in React, Web Components, and 3D web.'
 };
 
 
@@ -20,7 +20,8 @@ export default function AboutMe() {
                     transition={{ duration: 0.6 }}
                     className="max-w-6xl mx-auto text-center mb-16"
                 >
-                    <h2 className={`text-3xl md:text-4xl font-bold text-center mb-16 block bg-clip-text text-transparent animate-gradient leading-normal ${gradientText}`}>About Me</h2>
+                    <h2 className={`text-3xl md:text-4xl font-bold text-center mb-16 block bg-clip-text text-transparent animate-gradient leading-normal ${gradientText}`}>About
+                        Me</h2>
                     <p className="text-white text-lg">
                         Frontend Engineer with 11+ years of experience in React, Web Components, and 3D web development.
                         Expert in building high-performance, scalable, and visually immersive user interfaces.
@@ -43,7 +44,7 @@ export default function AboutMe() {
                             <h3 className="text-xl font-semibold text-fuchsia-500 mb-2">
                                 {skill.title}
                             </h3>
-                            <p className="text-gray-400">{skill.description}</p>
+                            <p className="text-gray-400 text-justify">{skill.description}</p>
                         </motion.div>
                     ))}
                 </div>
