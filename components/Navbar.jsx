@@ -29,7 +29,16 @@ export default function Navbar() {
                         <a href="#contact" className="text-white hover:text-gray-300 transition-colors">Contact</a>
 
                         <motion.button
-                            onClick={() => window.location.href = '/Shreyas_Mulay_Resume.pdf'}
+                            onClick={() => {
+                                if (typeof window !== "undefined") {
+                                    window.gtag("event", "download_resume", {
+                                        event_category: "Downloads",
+                                        event_label: "Resume Download",
+                                        value: 1,
+                                    });
+                                }
+                                window.location.href = "/Shreyas_Mulay_Resume.pdf";
+                            }}
                             className="cursor-pointer text-white hover:text-gray-300 transition-colors py-2 px-4 rounded-md border border-white hover:border-gray-300 active:bg-gray-800"
                             animate={{ scale: [1, 1.05, 1] }}
                             transition={{ repeat: Infinity, repeatType: 'loop', duration: 1.5 }}
