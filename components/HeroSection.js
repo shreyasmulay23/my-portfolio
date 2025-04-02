@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { LuArrowDown } from 'react-icons/lu';
 
 const HeroSection = () => {
     return (
@@ -79,6 +80,25 @@ const HeroSection = () => {
                         />
                         <span className={'text-gray-400'}>...and more</span>
                     </div>
+                    <motion.div
+                        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 1 }}
+                    >
+                        <motion.div
+                            animate={{
+                                y: [0, 10, 0]
+                            }}
+                            transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                                ease: 'easeInOut'
+                            }}
+                        >
+                            <LuArrowDown className="w-6 h-6 text-white/70"/>
+                        </motion.div>
+                    </motion.div>
                 </motion.div>
             </div>
         </div>
