@@ -45,6 +45,16 @@ export default function RootLayout({ children }) {
         <html lang="en">
         <head>
             <meta name="google-site-verification" content="9pSD15HXjK49OQCcFratZLYxdT_0K3ufHoBNxBWhETY"/>
+            {/* Google Analytics */}
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XZPLS88V3"></script>
+            <script dangerouslySetInnerHTML={{
+                __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-3XZPLS88V3');
+                `
+            }}/>
         </head>
         <body
             className={`${splineSansMono.className}`}
