@@ -38,8 +38,8 @@ export const projectsData = [
         }
     },
     {
-        title: 'CAP CLS',
-        description: 'The Central Limit System (CLS) at DBS Bank consolidates global limits, collateral, and covenant data, providing a real-time, single source of truth. It integrates various components for accurate limit management.',
+        title: 'Central Liability System (CLS)',
+        description: 'The Central Liability System (CLS) at DBS Bank consolidates global limits, collateral, and covenant data, providing a real-time, single source of truth. It integrates various components for accurate limit management.',
         image: 'projects/dbs.jpg',
         tech: ['React', 'Node.js', 'Spring MVC', 'Finacle', 'JIRA'],
         details: {
