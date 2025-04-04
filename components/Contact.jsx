@@ -34,7 +34,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="py-20 bg-primary">
+        <section id="contact" className="py-20 bg-ivory dark:bg-primary">
             <Toaster position="top-right"/>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.h2
@@ -60,7 +60,7 @@ export default function Contact() {
                         variants={fadeInUp}
                     >
                         <h3 className="text-2xl font-bold text-fuchsia-500">Let's talk about everything!</h3>
-                        <p className="text-white">
+                        <p className="text-black dark:text-white">
                             Feel free to reach out for collaborations, opportunities, or just a friendly chat.
                         </p>
                         <div className="space-y-6">
@@ -69,7 +69,7 @@ export default function Contact() {
                                 <div>
                                     <p className="text-gray-400">Email</p>
                                     <a href="mailto:shreyasmulay23@gmail.com"
-                                       className="text-white hover:text-blue-400">
+                                       className="text-black dark:text-white hover:text-blue-400">
                                         shreyasmulay23@gmail.com
                                     </a>
                                 </div>
@@ -78,7 +78,7 @@ export default function Contact() {
                                 <LuMapPin className="w-6 h-6 text-blue-400"/>
                                 <div>
                                     <p className="text-gray-400">Location</p>
-                                    <p className="text-white">Pune, India</p>
+                                    <p className="text-black dark:text-white">Pune, India</p>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ export default function Contact() {
                         variants={fadeInUp}
                     >
                         <div>
-                            <label htmlFor="name" className="block text-white mb-2">
+                            <label htmlFor="name" className="block text-black dark:text-white mb-2">
                                 Name
                             </label>
                             <input
@@ -100,12 +100,12 @@ export default function Contact() {
                                 name="name"
                                 id="name"
                                 required
-                                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-white"
+                                className="w-full px-4 py-2 bg-ivory dark:bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-black dark:text-white"
                             />
                         </div>
 
                         <div>
-                            <label htmlFor="email" className="block text-white mb-2">
+                            <label htmlFor="email" className="block text-black dark:text-white mb-2">
                                 Email
                             </label>
                             <input
@@ -113,12 +113,12 @@ export default function Contact() {
                                 name="from_name"
                                 id="email"
                                 required
-                                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-white"
+                                className="w-full px-4 py-2 bg-ivory dark:bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-black dark:text-white"
                             />
                         </div>
 
                         <div>
-                            <label htmlFor="message" className="block text-white mb-2">
+                            <label htmlFor="message" className="block text-black dark:text-white mb-2">
                                 Message
                             </label>
                             <textarea
@@ -126,7 +126,7 @@ export default function Contact() {
                                 name="message"
                                 rows={4}
                                 required
-                                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-white"
+                                className="w-full px-4 py-2 bg-ivory dark:bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400 text-black dark:text-white"
                             />
                         </div>
 

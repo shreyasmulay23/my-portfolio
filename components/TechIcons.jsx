@@ -25,7 +25,7 @@ function TechIcons() {
     };
 
     return (
-        <div className="mt-6 flex items-center space-x-4 space-y-4 flex-wrap justify-center md:justify-start">
+        <div className="mt-6 flex items-center gap-4 flex-wrap justify-center md:justify-start">
             {techStack.map((tech, i) => (
                 <motion.div
                     key={tech.alt}
@@ -41,11 +41,11 @@ function TechIcons() {
                         height={48}
                         alt={tech.alt}
                         title={tech.title}
-                        className={`h-12 w-12 object-cover ${tech.invert ? "filter invert" : ""}`}
+                        className={`h-12 w-12 object-cover ${tech.invert ? "dark:filter dark:invert" : ""}`}
                     />
                 </motion.div>
             ))}
-            <span className="text-gray-400">...and more</span>
+            <span className="text-black dark:text-gray-400">...and more</span>
         </div>
     );
 }

@@ -12,7 +12,7 @@ export default function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
 
     return (
-        <section id="projects" className="py-20 bg-primary">
+        <section id="projects" className="py-20 bg-ivory dark:bg-primary">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.h2
                     className={`text-3xl md:text-4xl font-bold text-center mb-16 block bg-clip-text text-transparent animate-gradient leading-normal ${gradientText}`}
@@ -45,7 +45,7 @@ export default function Projects() {
                             }}
                             whileHover={{ y: -8 }}
                             onClick={() => setSelectedProject(project)}
-                            className="group relative card-background text-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+                            className="group relative card-background card-shadow text-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
                         >
                             <div className="aspect-video overflow-hidden">
                                 <img
@@ -63,7 +63,7 @@ export default function Projects() {
                                     {project.tech.map((tech, techIndex) => (
                                         <span
                                             key={techIndex}
-                                            className="px-3 py-1 bg-indigo-100 text-fuchsia-500 rounded-full text-sm"
+                                            className="px-3 py-1 bg-indigo-100 text-fuchsia-500 rounded-full text-sm font-semibold"
                                         >
                       {tech}
                     </span>
@@ -75,7 +75,7 @@ export default function Projects() {
                                         href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 hover:text-gray-600"
+                                        className="flex items-center gap-2 text-black dark:text-white hover:text-gray-600"
                                         onClick={(e) => e.stopPropagation()}
                                     >
                                         <AiOutlineGithub className="w-5 h-5"/>
@@ -85,7 +85,7 @@ export default function Projects() {
                                         href={project.live}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 hover:text-gray-600"
+                                        className="flex items-center gap-2 text-black dark:text-white hover:text-gray-600"
                                         onClick={(e) => e.stopPropagation()}
                                     >
                                         <LuExternalLink className="w-5 h-5"/>

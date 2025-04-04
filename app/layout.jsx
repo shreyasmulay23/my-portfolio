@@ -1,5 +1,6 @@
 import { Spline_Sans_Mono } from 'next/font/google';
 import './globals.css';
+import { ThemeProvider } from '../components/ThemeProvider';
 
 const splineSansMono = Spline_Sans_Mono({
     subsets: ['latin'],
@@ -58,7 +59,7 @@ export default function RootLayout({ children }) {
         <body
             className={`${splineSansMono.className}`}
         >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
         </body>
         </html>
     );

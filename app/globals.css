@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @theme {
     --font-sans: var(--font-geist-sans);
@@ -8,6 +10,7 @@
 :root {
     --background: #ffffff;
     --foreground: #171717;
+    --color-primary: #1a0726;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,16 +86,16 @@ body {
     animation: gradient-shift 4s infinite alternate ease-in-out;
 }
 
-.bg-primary {
-    background: #1a0726
-}
-
-.bg-primary-alt {
-    background: #3F314F
-}
-
 .card-background {
-    background: rgb(29, 24, 54);
+    @apply bg-indigo-50 dark:bg-slate-900
+}
+
+.card-shadow {
+    border: 1px solid rgb(29, 24, 54);
     box-shadow: 8px 8px #A5158C;
+}
+
+.year-text-color {
+    @apply text-primary dark:text-ivory
 }
 

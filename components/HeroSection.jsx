@@ -8,7 +8,7 @@ import TechIcons from './TechIcons';
 
 const HeroSection = () => {
     return (
-        <div id="hero" className="bg-primary text-white py-20 relative w-full min-h-screen flex items-center">
+        <div id="hero" className=" bg-ivory dark:bg-primary text-ivory py-20 relative w-full min-h-screen flex items-center">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -31,12 +31,12 @@ const HeroSection = () => {
                     transition={{ duration: 0.8 }}
                     className="md:w-full flex flex-col justify-center gap-6 p-4 text-center md:text-left"
                 >
-                    <span className="text-2xl md:text-4xl text-gray-400">Hey, I'm Shreyas</span>
-                    <h1 className="text-3xl md:text-5xl mt-2">
+                    <span className="text-2xl md:text-4xl text-black dark:text-gray-400">Hey, I'm Shreyas</span>
+                    <h1 className="text-3xl md:text-5xl mt-2 text-black dark:text-white">
                         <span className="text-fuchsia-500">Full Stack</span> Engineer | AI-Powered 3D
                         Experiences
                     </h1>
-                    <p className="mt-4 text-gray-400 text-sm md:text-lg">
+                    <p className="mt-4 text-black dark:text-gray-400 text-sm md:text-lg">
                         Building <span
                         className={'text-fuchsia-500'}>scalable, interactive,</span> and <span
                         className={'text-fuchsia-500'}>AI-driven</span> web solutions

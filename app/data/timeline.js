@@ -40,5 +40,6 @@ export const timelineData = [
         company: 'Rajiv Gandhi Technical University, Bhopal',
         description: '73.47%',
         icon: 'education'
-    }
+    },
+    {}
 ];

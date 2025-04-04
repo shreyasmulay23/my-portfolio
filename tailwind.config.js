@@ -1,18 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+    content: [
+        './app/**/*.{js,ts,jsx,tsx,mdx}',
+        './pages/**/*.{js,ts,jsx,tsx,mdx}',
+        './components/**/*.{js,ts,jsx,tsx,mdx}'
+    ],
+    darkMode: 'class',
     theme: {
         extend: {
             colors: {
-                neonBlue: "#00FFFF",
-                neonGreen: "#00FF00",
-                deepPurple: "#1A002D",
-            },
-            boxShadow: {
-                "neon-blue": "0px 0px 15px #00FFFF",
-                "neon-green": "0px 0px 15px #00FF00",
-            },
-        },
+                primary: '#1a0726',
+                ivory: '#FDFAF6',
+            }
+        }
     },
-    plugins: [],
+    plugins: []
 };
