@@ -2,11 +2,13 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { LuArrowDown } from 'react-icons/lu';
 import TechIcons from './TechIcons';
+import { MdDarkMode, MdLightMode } from 'react-icons/md';
+import { useTheme } from './ThemeProvider';
 
 const HeroSection = () => {
+    const { theme, toggleTheme } = useTheme();
     return (
         <div id="hero" className=" bg-ivory dark:bg-primary text-ivory py-20 relative w-full min-h-screen flex items-center">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -64,10 +66,32 @@ const HeroSection = () => {
                                 ease: 'easeInOut'
                             }}
                         >
-                            <LuArrowDown className="w-6 h-6 text-white/70"/>
+                            <LuArrowDown className="w-6 h-6 text-fuchsia-500"/>
                         </motion.div>
                     </motion.div>
                 </motion.div>
+            </div>
+            <div className="fixed bottom-6 right-6 z-50">
+                <div className="relative w-16 h-16">
+                    <motion.span
+                        className="absolute inset-0 rounded-full border-2 border-fuchsia-500"
+                        animate={{
+                            scale: [1, 1.8],
+                            opacity: [0.7, 0],
+                        }}
+                        transition={{
+                            duration: 1.5,
+                            repeat: Infinity,
+                            ease: "easeOut",
+                        }}
+                    />
+                    <button
+                        onClick={toggleTheme}
+                        className="relative z-10 w-16 h-16 rounded-full bg-background border-2 border-fuchsia-500 text-fuchsia-500 hover:scale-110 transition-transform duration-200 shadow-lg"
+                    >
+                        {theme === 'dark' ? <MdLightMode className="h-6 w-6 mx-auto" title={'Switch to Light Theme'}/> : <MdDarkMode className="h-6 w-6 mx-auto" title={'Switch to Dark Theme'}/>}
+                    </button>
+                </div>
             </div>
         </div>
     );
