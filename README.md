@@ -8,7 +8,6 @@
 [![GitHub forks](https://img.shields.io/github/forks/shreyasmulay23/my-portfolio?style=flat-square)](https://github.com/shreyasmulay23/my-portfolio/network)
 [![Top Lang](https://img.shields.io/github/languages/top/shreyasmulay23/my-portfolio?style=flat-square)](https://github.com/shreyasmulay23/my-portfolio)
 [![Last Commit](https://img.shields.io/github/last-commit/shreyasmulay23/my-portfolio?style=flat-square)](https://github.com/shreyasmulay23/my-portfolio/commits/main)
-[![Deploy Status](https://vercelbadge.vercel.app/api/shreyasmulay23/my-portfolio)](https://vercelbadge.vercel.app/api/shreyasmulay23/my-portfolio)
 [![Website Status](https://img.shields.io/website?url=http%3A//shreyas-mulay.vercel.app/)](https://img.shields.io/website?url=http%3A//shreyas-mulay.vercel.app/)
 
 ---
