@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { LuExternalLink, LuX } from 'react-icons/lu';
 import { AiOutlineGithub } from 'react-icons/ai';
+import { PiVideoCameraFill } from 'react-icons/pi';
 
 
 export default function ProjectModal({ project, isOpen, onClose }) {
@@ -107,6 +108,16 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                                 >
                                     <LuExternalLink className="w-5 h-5"/>
                                     Live Demo
+                                </a>)}
+                                {project.demoVideos && (<a
+                                    href={project.demoVideos}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-800  hover:text-white transition-colors"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    <PiVideoCameraFill className="w-5 h-5"/>
+                                    Demo Videos
                                 </a>)}
                             </div>
                         </div>

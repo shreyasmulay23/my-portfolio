@@ -7,6 +7,7 @@ import ProjectModal from './ProjectModal';
 import { projectsData } from '../app/data/projects';
 import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai';
 import { gradientText } from '../app/utils/gradients';
+import { PiVideoCameraFill } from 'react-icons/pi';
 
 export default function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -90,6 +91,16 @@ export default function Projects() {
                                     >
                                         <LuExternalLink className="w-5 h-5"/>
                                         Live Demo
+                                    </a>)}
+                                    {project.demoVideos && (<a
+                                        href={project.demoVideos}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 text-black dark:text-white hover:text-gray-600"
+                                        onClick={(e) => e.stopPropagation()}
+                                    >
+                                        <PiVideoCameraFill className="w-5 h-5"/>
+                                        Demo Videos
                                     </a>)}
                                 </div>
                             </div>

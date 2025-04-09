@@ -16,7 +16,8 @@ export const projectsData = [
                 'Cloud Processing – Fast and scalable performance.'
             ],
             impact: 'Reduce rigging and animation time by up to 90%, compared to traditional manual methods. 🚀'
-        }
+        },
+        demoVideos: 'https://drive.google.com/drive/u/1/folders/13WCTI8BtgY4uVBdm8ylXjnZiD_Xxaefg'
     },
     {
         title: 'Generate Anything',
@@ -35,7 +36,8 @@ export const projectsData = [
                 'Customization of 3D models for various use cases.'
             ],
             impact: 'The Mesh Generation tool reduces 3D modeling time by 50-70%, making custom model creation faster and more accessible to users with minimal experience.'
-        }
+        },
+        demoVideos: 'https://drive.google.com/drive/u/1/folders/13WCTI8BtgY4uVBdm8ylXjnZiD_Xxaefg'
     },
     {
         title: 'Central Liability System (CLS)',
