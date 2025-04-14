@@ -7,23 +7,30 @@ export const timelineData = [
         icon: 'work'
     },
     {
-        year: 'Feb 2017 - Aug 2022',
+        year: 'Apr 2020 - Aug 2022',
         title: 'Senior Associate | Full Stack Engineer',
-        company: 'DBS Bank, Hyderabad',
+        company: 'DBS Bank, Hyderabad (Hybrid)',
+        description: 'Optimized UI/UX for enterprise banking apps, enhancing interaction speeds by 30% & accessibility. Led TDD with 95%+ coverage, ensuring high-performance, scalable front-end architecture.',
+        icon: 'work'
+    },
+    {
+        year: 'Feb 2017 - Apr 2020',
+        title: 'Application Specialist | Full Stack Engineer',
+        company: 'IBM India Pvt. Ltd., Hyderabad (on-site)',
         description: 'Optimized UI/UX for enterprise banking apps, enhancing interaction speeds by 30% & accessibility. Led TDD with 95%+ coverage, ensuring high-performance, scalable front-end architecture.',
         icon: 'work'
     },
     {
         year: 'Mar 2015 – Nov 2016',
-        title: 'Software Engineer',
-        company: 'Infogain India Pvt. Ltd., Bangalore',
+        title: 'Software Engineer | Full Stack Engineer',
+        company: 'Hewlett Packard Enterprise (Deputed from Infogain India Pvt. Ltd.), Bangalore (on-site)',
         description: 'Built interactive HTML5 reporting tools with Node.js & AngularJS, cutting dev time by 90% & boosting large dataset rendering efficiency by 45%.',
         icon: 'work'
     },
     {
         year: 'Dec 2013 – Mar 2015',
-        title: 'Software Engineer',
-        company: 'Nextlevl Retail Technologies Pvt. Ltd., Bangalore',
+        title: 'Software Engineer | Full Stack Engineer',
+        company: 'Nextlevl Retail Technologies Pvt. Ltd., Bangalore (on-site)',
         description: 'Built a unified marketing automation platform with Spring MVC & AWS, enhancing cloud scalability & improving UI performance by 25%.',
         icon: 'work'
     },
