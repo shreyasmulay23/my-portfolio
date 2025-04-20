@@ -39,7 +39,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
 
                         <div className="p-6">
                             <h3 className="text-2xl font-bold text-fuchsia-500 mb-2">{project.title}</h3>
-                            <p className="text-gray-400 mb-4 text-justify">{project.description}</p>
+                            <p className="text-black dark:text-gray-400 mb-4 text-justify">{project.description}</p>
 
                             <div className="flex flex-wrap gap-2 mb-6">
                                 {project.tech.map((tech, index) => (
@@ -57,14 +57,14 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                                     {project.details.problem && (
                                         <div>
                                             <h4 className="text-lg font-semibold text-fuchsia-500 mb-2">Problem</h4>
-                                            <p className="text-gray-400 text-justify">{project.details.problem}</p>
+                                            <p className="text-black dark:text-gray-400 text-justify">{project.details.problem}</p>
                                         </div>
                                     )}
 
                                     {project.details.solution && (
                                         <div>
                                             <h4 className="text-lg font-semibold text-fuchsia-500 mb-2">Solution</h4>
-                                            <p className="text-gray-400 text-justify">{project.details.solution}</p>
+                                            <p className="text-black dark:text-gray-400 text-justify">{project.details.solution}</p>
                                         </div>
                                     )}
 
@@ -72,7 +72,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                                         <div>
                                             <h4 className="text-lg font-semibold text-fuchsia-500 mb-2">Key
                                                 Features</h4>
-                                            <ul className="list-disc list-inside space-y-1 text-gray-400">
+                                            <ul className="list-disc list-inside space-y-1 text-black dark:text-gray-400">
                                                 {project.details.features.map((feature, index) => (
                                                     <li key={index}>{feature}</li>
                                                 ))}
@@ -83,7 +83,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                                     {project.details.impact && (
                                         <div>
                                             <h4 className="text-lg font-semibold text-fuchsia-500 mb-2">Impact</h4>
-                                            <p className="text-gray-400 text-justify">{project.details.impact}</p>
+                                            <p className="text-black dark:text-gray-400 text-justify">{project.details.impact}</p>
                                         </div>
                                     )}
                                 </div>

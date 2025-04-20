@@ -44,7 +44,7 @@ export default function AboutMe() {
                             <h3 className="text-xl font-semibold text-fuchsia-500 mb-2">
                                 {skill.title}
                             </h3>
-                            <p className="text-gray-400 text-justify">{skill.description}</p>
+                            <p className="dark:text-gray-400 text-black  text-justify">{skill.description}</p>
                         </motion.div>
                     ))}
                 </div>

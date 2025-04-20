@@ -50,7 +50,7 @@ const ExperienceCard = ({ experience, index }) => {
                     >
                         {experience.title}
                     </p>
-                    <span className="text-gray-400 text-[14px] text-justify">{experience.description}</span>
+                    <span className="text-black dark:text-gray-400 text-[14px] text-justify">{experience.description}</span>
                 </div>
             </motion.div>
         </VerticalTimelineElement>
