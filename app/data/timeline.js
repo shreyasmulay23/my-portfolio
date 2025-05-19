@@ -1,6 +1,12 @@
 export const timelineData = [
     {
-        year: 'Sept 2022 - Present',
+        year: 'May 2025 - Present',
+        title: 'Senior Architect',
+        company: 'Persistent Systems (Hybrid)',
+        description: '',
+        icon: 'work'
+    },{
+        year: 'Sept 2022 - April 2025',
         title: 'Senior Full Stack Engineer',
         company: 'Anything World, London (Remote)',
         description: 'Developing AI-driven 3D web apps with React, Three.js & ML automation, optimizing performance & enhancing interactivity. Integrated secure auth, payments & backend services, improving user retention & API efficiency.',
